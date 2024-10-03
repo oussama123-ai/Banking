@@ -54,7 +54,7 @@ The Banking application is a comprehensive, full-stack solution that allows user
 
 ### Frontend (Banking-ui)
 
-- Angular 16
+- Angular
 - Component-Based Architecture
 - Lazy Loading
 - Authentication Guard
