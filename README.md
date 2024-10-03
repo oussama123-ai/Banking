@@ -19,12 +19,12 @@ The Banking application is a comprehensive, full-stack solution that allows user
 
 ## Features
 
--User Registration: Users can create a new account.
--Email Validation: Accounts are activated through secure email validation codes.
--User Authentication: Existing users can securely log in to their accounts.
--Account Management: Users can create and update contacts, as well as view transaction history and deposits.
--Transaction Processing: Users can perform transactions with their contacts.
--Deposit Approval: Functionality to verify and approve deposits.
+-    User Registration: Users can create a new account.
+-    Email Validation: Accounts are activated through secure email validation codes.
+-    User Authentication: Existing users can securely log in to their accounts.
+-    Account Management: Users can create and update contacts, as well as view transaction history and deposits.
+-    Transaction Processing: Users can perform transactions with their contacts.
+-    Deposit Approval: Functionality to verify and approve deposits.
 
 #### Class diagram
 ![Class diagram](screenshots/class-diagram.png)
