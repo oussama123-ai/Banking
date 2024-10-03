@@ -89,7 +89,7 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE
 To get started with the Book Social Network project, follow the setup instructions in the respective directories:
 
 - [Backend Setup Instructions](https://github.com/oussama123-ai/SpringBoot-Lab/blob/main/README.md)
-- [Frontend Setup Instructions](banking-ui/README.md)
+- [Frontend Setup Instructions](https://github.com/oussama123-ai/Angular-Lab/blob/main/README.md)
 
 ## Contributors
 
