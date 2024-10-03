@@ -1,0 +1,44 @@
+services:
+  postgres:
+    container_name: postgres-sql
+    image: postgres
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: bank_db
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - banking-demo
+    restart: unless-stopped
+
+  bank-api:
+    container_name: bank-api
+    image: oussama/bank_api:1.2
+    ports:
+      - "8080:8080"
+    networks:
+      - banking-demo
+    depends_on:
+      - postgres
+
+  bank-ui:
+    container_name: bank-ui
+    image: oussama/bank-ui:1.2
+    ports:
+      - 4200:4200
+    networks:
+      - banking-demo
+    depends_on:
+      - bank-api
+
+networks:
+  spring-demo:
+    driver: bridge
+
+volumes:
+  postgres:
+    driver: local
